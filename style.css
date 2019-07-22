@@ -1,0 +1,439 @@
+/*
+Theme Name: Allenby Art Custom Theme
+Author: Position Designs LLC
+Description:  Custom theme designed for Nathaniel Allenby to feature his artwork and photography.
+Text Domain: allenbyart
+*/
+
+html, body {
+	height: 100%;
+	overflow: visible;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-menu li, .nav-menu-footer li {
+	font-family: 'Nunito', sans-serif;
+}
+
+/*	Header Styling	*/
+
+header {
+	background-color: black;
+	color: white;
+	font-family: 'KoHo', sans-serif;
+}
+
+.header-contact-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: .5em 2em;
+}
+
+.contact-container {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.header-contact-info > .contact-container .fas {
+	display: none;
+}
+
+.header-contact-info a {
+	text-decoration: none;
+	color: white;
+}
+
+#header-logo {
+	height: 80px;
+	flex-basis: auto;
+}
+
+.nav-item > a{
+	color: white;
+	font-size: 2.25em;
+	line-height: 3em;
+	text-align: center;
+}
+
+.fa-bars {
+	color: white;
+	font-size: 2em;
+	width: auto;
+	height: auto;
+}
+
+.fa-shopping-scart {
+	color: white;
+	font-size: 2.25em;
+}
+
+@media only screen and (min-width: 480px) {
+
+	.header-contact-info > .contact-container .fas {
+		display: inline;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	
+	.header-contact-info {
+		justify-content: flex-end;
+	}
+
+	.header-contact-info > .contact-container {
+		padding: 0 2em;
+	}
+
+	#header-logo {
+		height: 180px;
+		flex-basis: auto;
+	}
+	
+	.header-nav {
+		position: static;
+	}
+	
+	.header-nav-list-wrapper {
+		position: static;
+		width: 100%;
+		height: 100%;
+	}
+
+	
+	.nav-menu {
+		flex-flow: row nowrap;
+	}
+	
+	.nav-menu li {
+		line-height: 180px;
+	}
+	
+	.fa-bars {
+		font-size: 5em;
+	}
+}
+
+@media only screen and (min-width: 1198px) {
+
+	.nav-menu {
+		margin-right: 180px;
+	}
+}
+
+/*	Main Content Styling */
+
+.content {
+	flex: 1 0 auto;
+}
+
+li {
+	display: inline;
+}
+
+.single-column {
+	max-width: 1200px;
+	margin: 1em;
+	flex: 1 0 auto;
+	font-family: 'KoHo', 'sans-serif';
+	font-size: 1.25em;
+}
+
+.intro-text {
+	font-size: 1em;
+	padding: 1em .5em 0 .5em;
+}
+
+@media only screen and (min-width: 768px) {
+
+	.intro-text {
+		font-size: 1.5em;
+		padding: 1em 0 0 0;
+	}
+}
+
+@media only screen and (min-width: 1198px) {
+
+	.single-column {
+		margin: auto;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+}
+
+/*	footer styling	*/
+
+footer {
+	background-color: black;
+	color: white;
+	flex-shrink: 0;
+}
+
+.footer-content {
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	padding: 0 10px;
+}
+
+.footer-nav-wrapper {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-full-navigation-container {
+	width: 100%;
+	order: 2;
+	text-align: center;
+	margin-top: 3em;
+}
+
+.nav-menu-footer {
+	padding: 0;
+	margin:0;
+}
+.nav-menu-footer li {
+	display: block;
+	font-size: 1.25em;
+}
+
+.nav-menu-footer li a {
+	text-decoration: none;
+	color: white;
+	margin-top: 1em;
+}
+
+.footer-external-nav {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	order: 1;
+}
+
+.footer-nav-image-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.footer-contact-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 2em 0;
+}
+
+.footer-contact-info > .contact-container {
+	margin-top: 1em;
+}
+
+.footer-contact-info a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+}
+
+.footer-legalscript {
+	text-align: center;
+	font-family: 'KoHo', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+
+	.footer-nav-wrapper {
+		flex-direction: row;
+	}
+
+	.menu-full-navigation-container {
+		width: 25%;
+		order: 1;
+		text-align: left;
+		margin: 0;
+	}
+
+	.nav-menu-footer li a {
+		margin: 0;
+	}
+
+	.footer-external-nav {
+		width: 75%;
+		order: 2;
+		justify-content: space-between;
+	}
+	
+	.footer-contact-info {
+		flex-direction: row;
+	}
+
+	.footer-contact-info > .contact-container {
+		margin: 0;
+	}
+}
+
+/*--------    Page Styling    --------*/
+
+/*	Front Page	*/
+
+.intro-text {
+	font-family: 'KoHo', sans-serif;
+}
+
+.intro-text p {
+	font-size: 1.25em;
+}
+
+/* About Page*/
+
+.about-text {
+	font-family: 'KoHo', 'sans-serif';
+}
+
+.about-text p {
+	font-size: 1.25em;
+}
+
+.headshot {
+	float: left;
+	padding-right: 1em;
+	margin: auto;
+	width: 300px;
+}
+
+.headshot > img {
+	width: 100%;
+	height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+	
+	.headshot {
+		width: 40%;
+	}
+}
+
+/*	Gallery Styles */
+
+.gallery {
+	margin: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery-thumbnail-container {
+	margin: 4px;
+}
+.gallery-thumbnail {
+	height: 200px;
+}
+
+/*	Shop Styles	*/
+
+.woocommerce ul.products li.product a img {
+	margin-bottom: 0;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product .price {
+	background: black;
+	color: white;
+	padding: .25em;
+}
+
+.woocommerce ul.products li.product .button {
+	display: none;
+}
+
+/*	Product Page	*/
+
+.woocommerce div.product p.price {
+	color: black;
+}
+.woocommerce div.product form.cart .button {
+	background-color: black;
+}
+
+.product_meta {
+	display: none;
+}
+
+/*	front page image slider  */
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 100%;
+	min-width: 400px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+
+.slide-image-item {
+	display: none;
+	max-width: 100%;
+	height: 100%;
+}
+
+.slide-table-wrapper {
+	display: table;
+	height: 100%;
+	margin: auto;
+}
+
+.vertical-center-helper {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.slide-link-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	max-width: 100%;
+	margin-left: auto;
+}
+
+.slideshow-thumbnail {
+	max-width: 100%;
+	max-height: 400px;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-fill-mode: forwards;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: 0.4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: 0.4} 
+	to {opacity: 1}
+}
+
+@media only screen and (min-width: 768px) {
+	.slideshow-container {
+		height: 600px;
+		margin: 16px;
+	}
+
+	.slideshow-thumbnail {
+		max-height: 600px;
+	}
+}
