@@ -367,6 +367,27 @@ footer {
 	display: none;
 }
 
+/*	Checkout Page	*/
+
+.col-1, .col-2 {
+	max-width: 100%;
+}
+
+.woocommerce-input-wrapper {
+	flex-grow: 1;
+}
+
+#order_comments_field {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+}
+
+.woocommerce-info {
+	display: block;
+}
+
 /*	front page image slider  */
 
 /* Slideshow container */
